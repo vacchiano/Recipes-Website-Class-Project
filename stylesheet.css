@@ -1,0 +1,288 @@
+/* CSS */
+
+html {
+    /* entire site background */
+    background-color: #f2f2f2;
+}
+.logo-container {
+    /* full width logo container */
+    width: 100%;
+    /* background: red; */
+    
+    padding: 10px 0px 30px 0;
+
+}
+
+.logo {
+    /* center logo */
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.logo-line {
+    /* horizontal line */
+    width: 75%;
+    opacity: .5;
+    
+    padding-bottom: px;
+    
+    color: black;
+    
+}
+
+.menu-container {
+    
+    /* nav container */
+    padding-top: 20px;
+    width: 100%;
+    height: 100px;
+    
+    padding-bottom: 20px;
+    
+    
+}
+
+.menu {
+    /* center menu */
+    height: 50px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    
+    
+
+}
+
+.menu li {
+    /* horizontal menu items */
+    display: inline;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    font-size: 25px;
+    
+    text-align: center;
+    
+    width: 25%;
+    
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    
+    background-color: #f4d099;
+    margin: 5px;
+    
+    border-radius: 10px;
+    
+
+    /* transition when hover */
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+}
+
+
+
+.menu li:hover {
+    /* transition */
+    width: 30%;
+    
+}
+
+
+.menu a {
+    /* menu links */
+    text-decoration: none;
+    color: white;
+}
+
+.description {
+    /* index page description */
+    /* centered */
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background: #f4d099;
+    padding: 20px;
+    border-radius: 10px;
+   
+    font-family: sans-serif;
+    font-size: 25px;
+    
+    font-weight: 500;
+    
+}
+
+/*.description-shell {
+    width: 100%;
+    background-color: darkgrey;
+    border-radius: 10px;
+    padding: 10px 0;
+}*/
+
+.description p {
+    color: #2f2f2f;
+    letter-spacing: 2px;
+    
+}
+
+.footer {
+    /* footer fixed to bottom of screen */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 40%;
+    background-color: #2e2e2e;
+    
+    color: white;
+    
+    margin-left: 30%;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    height: 30px;
+    
+    padding-top: 10px;
+    
+    font-family: sans-serif;
+    
+    font-weight: 100;
+    
+}
+
+
+
+.steps-container {
+    /* content page instructions container */
+    width: 60%;
+    margin: 0 auto;
+    
+    background-color: #f4d099;
+    
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+h2 {
+    /* steps titles */
+    width: 100%;
+    margin: 0 auto;
+    
+    margin-bottom: 20px;
+    
+    color: #2e2e2e;
+
+    padding: 25px 0 5px 0;
+    
+    text-align: center;
+    
+    font-family: sans-serif;
+    
+    font-size: 30px;
+    
+    padding: 10px 10px 10px 10px;
+}
+
+.subpage_pic {
+    /* each picture for cooking steps */
+    display: block;
+    margin: 0 auto;
+    
+    border-top: solid 10px #f4d099;
+    border-right: solid 30px #f4d099;
+    border-bottom: solid 10px #f4d099;
+    border-left: solid 30px #f4d099;
+}
+
+a .fa-arrow-up {
+    /* font awesome in footer */
+    color: white;
+    float: right;
+    margin-right: 10px;
+    padding: 5px;
+    
+    background-color: #2e2e2e;
+    border-radius: none;
+    
+    -webkit-transition: background-color: 1s, border-radius: 1s, color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color: 1s;
+    transition: color .5s;
+    transition: border-radius: 1s;
+}
+
+a .fa-arrow-up:hover {
+    /* font awesome arrow transition */
+    background-color: gold;
+    border-radius: 50%;
+    color: black;
+}
+
+a .fa-home{
+    /* font awesome home bottom left footer */
+    color: white;
+    float: left;
+    margin-left: 10px;
+    padding: 5px;
+    
+    background-color: #2e2e2e;
+    border-radius: none;
+    
+    -webkit-transition: background-color: 1s, border-radius: 1s, color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color: 1s;
+    transition: color .5s;
+    transition: border-radius: 1s;
+}
+
+a .fa-home:hover {
+    /* font awesome transition */
+    background-color: gold;
+    border-radius: 50%;
+    color: black;
+}
+
+.overlay_list {
+    
+    /* ingredients list overlayed on main pic of each cooking page */
+    position: absolute;
+    bottom: 2px;
+    right: 30%;
+    opacity: 0;
+    color: white;
+    
+    list-style-type: none;
+    
+    font-family: sans-serif;
+    
+    padding: 50px;
+    text-align: center;
+    
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+    
+    
+    -webkit-transition: opacity 1s, background-color 3s ease-out;
+    transition: opacity 1s ease-out, background-color 3s ease-out;
+}
+
+.pic_box:hover .overlay_list {
+    
+    /* fade overlay in on hover */
+    opacity: 1;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 10px;
+}
+
+#main_pic {
+    /* dim background pic */
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s ease-out;
+}
+
+.pic_box:hover #main_pic {
+    opacity: .5;
+}
+
+.overlay_lis:hover #main_pic {
+    opacity: .5;
+}
+
